@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1 id="typing-text">Let's create something special</h1>
+    
+    <main>
+        <!-- Step 1: Who are you thinking about? -->
+        <section class="form-section">
+            <h2>Who are you thinking about?</h2>
+            <input type="text" id="recipient-name" placeholder="Enter their name" required>
+        </section>
+
+        <!-- Step 2: Set your headline -->
+        <section class="form-section">
+            <h2>What do you want to set as your headline?</h2>
+            <input type="text" id="custom-headline" placeholder="Enter your headline" required>
+            <button type="button" id="confirm-headline">Confirm</button>
+        </section>
+
+        <!-- Step 3: Upload pictures -->
+        <section class="form-section">
+            <h2>Upload your pictures</h2>
+            <input type="file" id="picture-upload" multiple accept="image/*">
+            <p class="upload-hint">Select multiple pictures to upload</p>
+        </section>
+
+        <!-- Step 4: Pictures display area -->
+        <section class="pictures-section" id="pictures-container">
+            <h2>Your Pictures</h2>
+            <div id="uploaded-pictures">
+                <!-- Pictures and subtitles will be added here dynamically -->
+            </div>
+        </section>
+
+        <!-- Final actions -->
+        <section class="form-section">
+            <button type="button" id="create-gift" class="create-button">Create Gift</button>
+            <button type="button" id="preview-gift" class="create-button">Preview</button>
+        </section>
+    </main>
+
+    <footer>
+        <a href="home.html">Back to Home</a>
+        <a href="edit.html">Edit Page</a>
+    </footer>
+
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
