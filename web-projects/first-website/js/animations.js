@@ -19,23 +19,35 @@ window.onload = () => {
 
 
 
-function typingAnimation(elementId, text, typingSpeed = 100) {
-    const typingElement = document.getElementById(elementId); // Target the element by ID
-    typingElement.textContent = ""; // Clear any existing text
-    let index = 0;
-
-    function typeText() {
-        if (index < text.length) {
-            typingElement.textContent += text.charAt(index); // Add one letter at a time
-            index++;
-            setTimeout(typeText, typingSpeed); // Call the function again after typingSpeed
-        }
-    }
-
-    typeText(); // Start the typing animation
-}
 
 // Start Typing Animation on Page Load
 window.onload = () => {
-    typingAnimation("typing-text", "Welcome to Thought of You", 100); // Call the function
+    typingAnimation("typing-text" ,100); // Call the function
+};
+
+function typingAnimation(elementId, speed) {
+    const element = document.getElementById(elementId);
+    if (!element) {
+        console.error("Element not found:", elementId);
+        return;
+    }
+    
+    const text = element.textContent;
+    console.log("Starting animation with text:", text);
+    element.textContent = ''; // Clear the text
+    
+    let i = 0;
+    const timer = setInterval(() => {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+        } else {
+            clearInterval(timer);
+            console.log("Animation complete");
+        }
+    }, speed);
+}
+
+window.onload = () => {
+    typingAnimation("typing-text", 100);
 };

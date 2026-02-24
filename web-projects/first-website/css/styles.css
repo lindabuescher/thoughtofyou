@@ -22,8 +22,8 @@ body {
 
 p {
   font-family: "Libre Baskerville", sans-serif;
-  color: #F5495F;
-  font-size: 20px;
+  color: #8b2054;
+  font-size: 16px;
 }
 
 li {
@@ -37,14 +37,15 @@ main {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 200%;
+  max-width: 40%;
 }
 
 a {
   font-size: 16px;
   line-height: 4;
   letter-spacing: 2;
-  color: #DCB012; 
+  color: #8b2054;
+  text-align: center; 
 }
 
 
@@ -115,12 +116,12 @@ nav .create-button:hover {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 40px; /* Shrink the font size for smaller screens */
+        font-size: 40px; 
     }
       
 
     p {
-        font-size: 16px; /* Shrink the font size for smaller screens */
+        font-size: 16px; 
     }
 
     nav ul {
@@ -130,12 +131,12 @@ nav .create-button:hover {
     }
 
     nav input {
-        width: 20%; /* Proportional width for smaller screens */
+        width: 20%;
         font-size: 14px;
     }
 
     nav .create-button {
-        width: 20%; /* Proportional width for smaller screens */
+        width: 20%;
         font-size: 14px;
     }
 

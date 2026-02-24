@@ -29,3 +29,15 @@ Interactive Experience: Recipients can navigate through the content like reading
 
 
 This project is built as a web application that handles user uploads, content management, password generation, and responsive design to ensure the experience works well across different devices.
+
+
+
+## How to Run
+1. Clone the repository: `git clone <repository-URL>`
+2. Open the `index.html` file in your browser.
+
+## Folder Structure
+- `index.html`: Homepage
+- `create.html`: Gift creation page
+- `access.html`: Gift access page
+- `styles.css`: CSS file for styling
