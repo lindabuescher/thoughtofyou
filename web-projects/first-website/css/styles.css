@@ -18,7 +18,6 @@ body {
   margin: 0 auto;
   align-items: center;
   background-color: #E5BFD7; 
-  padding: 100px 100px;
 }
 
 p {
@@ -53,7 +52,7 @@ a {
 
 /* General list styling */
 nav ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none; 
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -71,7 +70,7 @@ nav input {
     border-radius: 12px;
     font-size: 16px;
     font-weight: bold;
-    width: 200px;
+    width: 20%;
     color: #F5495F;
 }
 
@@ -104,12 +103,40 @@ nav .create-button {
     font-weight: bold;
     font-size: 16px; 
     transition: background-color 0.3s ease;
-    width: 200px;
+    width: 20%;
     text-align: center; 
     display: inline-block; 
 }
 
 nav .create-button:hover {
-    background-color: #ffe6e6; /* Change background color on hover */
-    color: #8b2054; /* Change text color on hover */
+    background-color: #ffe6e6;
+    color: #8b2054;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Shrink the font size for smaller screens */
+    }
+      
+
+    p {
+        font-size: 16px; /* Shrink the font size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    nav input {
+        width: 20%; /* Proportional width for smaller screens */
+        font-size: 14px;
+    }
+
+    nav .create-button {
+        width: 20%; /* Proportional width for smaller screens */
+        font-size: 14px;
+    }
+
+  }
