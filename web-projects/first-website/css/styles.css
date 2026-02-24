@@ -1,0 +1,67 @@
+html {
+  font-size: 24px;
+  background-color: #ffe0c1; 
+  font-family: "Libre Baskerville", serif;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #8b2054; 
+  letter-spacing: -2;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #ffe0c1; 
+  padding: 100px 100px;
+}
+
+main {
+  padding-bottom: 200px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200%;
+}
+
+a {
+  font-size: 16px;
+  line-height: 4;
+  letter-spacing: 2;
+  color: #DCB012; 
+}
+
+
+a.done {
+  color: darkseagreen;
+  text-decoration: line-through solid black 2px;
+}
+
+
+/* Links */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff;        /* Set link color */
+    font-weight: bold; 
+    background-color: #8b2054;    /* Make text bold */
+}
+
+/* Add hover effect */
+a:hover {
+    color: #2c0505;        
+}
+
+/* Style links inside navigation */
+nav a {
+    padding: 0.5rem 1rem;  /* Add padding */
+    border-radius: 5px;    /* Rounded corners */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #ffe6e6; /* Light background on hover */
+}
