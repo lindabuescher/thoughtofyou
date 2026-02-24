@@ -14,3 +14,26 @@ myImage.addEventListener("click", () => {
     myImage.setAttribute("src", "images/Leyla.png");
   }
 });
+
+// Define the correct password
+const correctPassword = "yourPassword123";
+
+// Get the input field
+const passwordInput = document.getElementById("password");
+
+// Add an event listener to the input field
+passwordInput.addEventListener("keydown", (event) => {
+    // Check if the pressed key is "Enter"
+    if (event.key === "Enter") {
+        const enteredPassword = passwordInput.value.trim(); // Get the entered password
+        if (enteredPassword === correctPassword) {
+            // Redirect to the access page
+            window.location.href = "access.html";
+        } else {
+            // Show an error message
+            alert("Incorrect password. Please try again.");
+        }
+    }
+});
+
+
