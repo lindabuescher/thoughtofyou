@@ -1,6 +1,6 @@
 html {
   font-size: 24px;
-  background-color: #ffe0c1; 
+  background-color: #E5BFD7; 
   font-family: "Libre Baskerville", serif;
 }
 
@@ -11,15 +11,28 @@ h1 {
   letter-spacing: -2;
 }
 
+
 body {
+  text-align: center;
   width: 900px;
   margin: 0 auto;
-  background-color: #ffe0c1; 
+  align-items: center;
+  background-color: #E5BFD7; 
   padding: 100px 100px;
 }
 
+p {
+  font-family: "Libre Baskerville", sans-serif;
+  color: #F5495F;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
 main {
-  padding-bottom: 200px;
+  padding-bottom: 600px;
 }
 
 img {
@@ -36,32 +49,67 @@ a {
 }
 
 
-a.done {
-  color: darkseagreen;
-  text-decoration: line-through solid black 2px;
+
+
+/* General list styling */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+nav li {
+    margin-bottom: 10px; 
+}
+
+nav input {
+    padding: 20px 40px;
+    text-align: center;
+    border: 1px solid #8b2054;
+    background-color: #ffe6e6;
+    font-family: "Libre Baskerville", serif;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    color: #F5495F;
+}
+
+nav input::placeholder {
+    color: #8b2054;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+nav input:hover {
+    background-color: #ffe6e6;
+    color: #F5495F;
+}
+
+nav input:focus {
+    outline: none;
+    border: 1px solid #8b2054;
 }
 
 
-/* Links */
-a {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff;        /* Set link color */
-    font-weight: bold; 
-    background-color: #8b2054;    /* Make text bold */
+/* Create a Gift button */
+nav .create-button {
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: #8b2054; 
+    padding: 0px 40px; 
+    border-radius: 12px; 
+    font-weight: bold;
+    font-size: 16px; 
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-align: center; 
+    display: inline-block; 
 }
 
-/* Add hover effect */
-a:hover {
-    color: #2c0505;        
-}
-
-/* Style links inside navigation */
-nav a {
-    padding: 0.5rem 1rem;  /* Add padding */
-    border-radius: 5px;    /* Rounded corners */
-}
-
-/* Hover effect for navigation links */
-nav a:hover {
-    background-color: #ffe6e6; /* Light background on hover */
+nav .create-button:hover {
+    background-color: #ffe6e6; /* Change background color on hover */
+    color: #8b2054; /* Change text color on hover */
 }
