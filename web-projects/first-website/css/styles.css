@@ -49,9 +49,36 @@ a {
 }
 
 
+input {
+  padding: 20px 40px;
+  text-align: center;
+  border: 1px solid #8b2054;
+  background-color: #ffe6e6;
+  font-family: "Libre Baskerville", serif;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 200px;
+  width: fit-content;
+  max-width: 80%;
+  color: #8b2054;
+  outline: #8b2054;
+}
+
+button {
+  padding: 20px 40px;
+  text-align: center;
+  border: 1px solid #8b2054;
+  background-color: #8b2054;
+  color: #ffffff;
+  font-family: "Libre Baskerville", serif;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  width: fit-content;
+}
 
 
-/* General list styling */
 nav ul {
     list-style: none; 
     padding-top: 40px;
@@ -94,7 +121,6 @@ nav input:focus {
 }
 
 
-/* Create a Gift button */
 nav .create-button {
     text-decoration: none; 
     color: #ffffff; 
