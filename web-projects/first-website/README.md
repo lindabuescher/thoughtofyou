@@ -41,3 +41,24 @@ This project is built as a web application that handles user uploads, content ma
 - `create.html`: Gift creation page
 - `access.html`: Gift access page
 - `styles.css`: CSS file for styling
+
+
+My Idea of how it works:
+
+Creator fills out create.html
+        ↓
+JavaScript collects all data (giftData)
+        ↓
+Sends it to your Node/Express server
+        ↓
+Server saves it to database with a unique ID
+        ↓
+Server returns a password to the creator
+        ↓
+Creator shares password with recipient
+        ↓
+Recipient visits access.html + enters password
+        ↓
+Server looks up the gift by password
+        ↓
+Custom gift page is displayed

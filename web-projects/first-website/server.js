@@ -1,14 +1,31 @@
-const { createServer } = require('node:http');
 
-const hostname = '127.0.0.1';
-const port = 3000;
 
-const server = createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
+require('dotenv').config();
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+const { createClient } = require('@supabase/supabase-js');
+
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_KEY
+);
+
+const app = express();
+app.use (express.json());
+
+app.post('/api/gifts', async (req, res) => {
+  const { recipientName, headline, font, backgroundColor,textColor , password } = req.body;
+
+  const { data, error } = await supabase
+    .from('gifts')
+    .insert([
+      { recipient_name: recipientName, headline, font, background_color: backgroundColor, text_color: textColor, password }
+    ])
+      .select();
+
+
+if (error) {
+    return res.status(500).json({ error: error.message });
+  }
+
+  res.status(201).json({ gift: data[0] });
 });
